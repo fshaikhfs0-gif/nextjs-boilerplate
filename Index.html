@@ -1,0 +1,279 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Discover everyday sneakers and streetwear at Shoephoria.">
+<title>SHOEPHORIA | Sneaker Store</title>
+
+<style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #fff;
+  color: #171717;
+}
+
+header {
+  padding: 20px 6%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+}
+
+.logo {
+  font-size: 23px;
+  font-weight: 900;
+  letter-spacing: -1px;
+}
+
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #222;
+  font-size: 13px;
+}
+
+.announcement {
+  text-align: center;
+  background: #171717;
+  color: white;
+  padding: 11px;
+  font-size: 12px;
+}
+
+.hero {
+  padding: 75px 7%;
+  background: #f2f1ee;
+  min-height: 390px;
+  display: flex;
+  align-items: center;
+}
+
+.hero h1 {
+  font-size: clamp(42px, 7vw, 76px);
+  line-height: 1.02;
+  letter-spacing: -3px;
+  max-width: 600px;
+}
+
+.hero p {
+  margin: 20px 0;
+  color: #555;
+  line-height: 1.6;
+}
+
+.btn {
+  display: inline-block;
+  background: #171717;
+  color: white;
+  padding: 15px 25px;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+section {
+  padding: 55px 6%;
+}
+
+.heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.heading h2 {
+  font-size: 26px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+.product {
+  background: #f4f4f4;
+}
+
+.product-image {
+  height: 210px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(145deg, #eee, #ddd);
+  font-size: 55px;
+}
+
+.product-info {
+  padding: 15px;
+  background: white;
+}
+
+.product-info h3 {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.product-info p {
+  font-size: 13px;
+  color: #666;
+}
+
+.categories {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.category {
+  background: #eee;
+  padding: 35px 15px;
+  text-align: center;
+  font-weight: bold;
+}
+
+footer {
+  background: #171717;
+  color: white;
+  padding: 35px 6%;
+  font-size: 13px;
+  line-height: 2;
+}
+
+@media(max-width:650px) {
+  nav a {
+    margin-left: 9px;
+    font-size: 11px;
+  }
+
+  .logo {
+    font-size: 18px;
+  }
+
+  .hero {
+    min-height: 340px;
+    padding: 55px 7%;
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .product-image {
+    height: 155px;
+  }
+
+  .categories {
+    grid-template-columns: 1fr;
+  }
+
+  section {
+    padding: 38px 5%;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="announcement">
+  WELCOME TO SHOEPHORIA
+</div>
+
+<header>
+  <div class="logo">SHOEPHORIA.</div>
+
+  <nav>
+    <a href="#home">HOME</a>
+    <a href="#shop">SHOP</a>
+    <a href="#categories">CATEGORIES</a>
+  </nav>
+</header>
+
+<div class="hero" id="home">
+  <div>
+    <h1>YOUR NEXT<br>PAIR STARTS HERE.</h1>
+
+    <p>
+      Discover everyday sneakers and fresh streetwear styles.
+    </p>
+
+    <a class="btn" href="#shop">
+      EXPLORE COLLECTION
+    </a>
+  </div>
+</div>
+
+<section id="shop">
+  <div class="heading">
+    <h2>FEATURED COLLECTION</h2>
+  </div>
+
+  <div class="grid">
+
+    <div class="product">
+      <div class="product-image">👟</div>
+      <div class="product-info">
+        <h3>Classic Runner</h3>
+        <p>Product details coming soon</p>
+      </div>
+    </div>
+
+    <div class="product">
+      <div class="product-image">👟</div>
+      <div class="product-info">
+        <h3>Retro Street</h3>
+        <p>Product details coming soon</p>
+      </div>
+    </div>
+
+    <div class="product">
+      <div class="product-image">👟</div>
+      <div class="product-info">
+        <h3>Everyday Essential</h3>
+        <p>Product details coming soon</p>
+      </div>
+    </div>
+
+    <div class="product">
+      <div class="product-image">👟</div>
+      <div class="product-info">
+        <h3>Urban Runner</h3>
+        <p>Product details coming soon</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section id="categories">
+  <div class="heading">
+    <h2>SHOP BY CATEGORY</h2>
+  </div>
+
+  <div class="categories">
+    <div class="category">MEN'S SNEAKERS</div>
+    <div class="category">WOMEN'S SNEAKERS</div>
+    <div class="category">NEW ARRIVALS</div>
+  </div>
+</section>
+
+<footer>
+  <strong>SHOEPHORIA.</strong><br>
+  Your destination for everyday streetwear.<br>
+  © 2026 Shoephoria. All rights reserved.
+</footer>
+
+</body>
+</html>
